@@ -1,0 +1,16 @@
+.paperSection {
+  padding: 24px;
+}
+
+.emptyMessage {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.collapseCell {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.detailBox {
+  padding: 16px;
+}
