@@ -6,16 +6,16 @@ import RoutesAdministrador from "./modules/administrador/routes";
 import type {
 	NovoAdministrador,
 	Administrador,
-} from "./modules/administrador/types/Administrador";
+} from "./types/Administrador";
 import RoutesDistribuidora from "./modules/distribuidora/routes";
 import type {
 	NovoDistribuidora,
 	Distribuidora,
-} from "./modules/distribuidora/types/Distribuidora";
+} from "./types/Distribuidora";
 import RoutesJogo from "./modules/jogo/routes";
-import type { NovoJogo, Jogo } from "./modules/jogo/types/Jogo";
+import type { NovoJogo, Jogo } from "./types/Jogo";
 import RoutesUsuario from "./modules/usuario/routes";
-import type { NovoUsuario, Usuario } from "./modules/usuario/types/Usuario";
+import type { NovoUsuario, Usuario } from "./types/Usuario";
 import { createId } from "./utils/createId";
 import { administradoresMock } from "./utils/administradoresMock";
 import { usuariosMock } from "./utils/usuariosMock";

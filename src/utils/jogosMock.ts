@@ -1,4 +1,4 @@
-import { Jogo } from "../modules/jogo/types/Jogo";
+import { Jogo } from "../types/Jogo";
 
 export const jogosMockados: Jogo[] = [
 	{

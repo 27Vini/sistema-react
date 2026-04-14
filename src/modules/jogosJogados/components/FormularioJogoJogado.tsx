@@ -15,13 +15,9 @@ import {
 	Typography,
 } from "@mui/material";
 import commonStyles from "../../../styles/MuiCommon.module.css";
-import { Jogo } from "../../jogo/types/Jogo";
-import { Usuario } from "../../usuario/types/Usuario";
-import {
-	EnumStatus,
-	JogoJogado,
-	JogoJogadoNovo,
-} from "../types/JogosJogados";
+import { Jogo } from "../../../types/Jogo";
+import { Usuario } from "../../../types/Usuario";
+import { EnumStatus, JogoJogado, JogoJogadoNovo } from "../types/JogosJogados";
 
 interface FormularioJogoJogadoProps {
 	jogos: Jogo[];
@@ -39,10 +35,7 @@ interface FormState {
 	estrela: number;
 }
 
-const createInitialState = (
-	jogos: Jogo[],
-	usuarios: Usuario[],
-): FormState => ({
+const createInitialState = (jogos: Jogo[], usuarios: Usuario[]): FormState => ({
 	usuarioId: usuarios[0] ? String(usuarios[0].id) : "",
 	jogoId: jogos[0] ? String(jogos[0].id) : "",
 	status: EnumStatus.jogando,
@@ -116,7 +109,12 @@ export function FormularioJogoJogado({
 				jogoId: String(jogosDisponiveis[0].id),
 			}));
 		}
-	}, [formState.jogoId, formState.usuarioId, jogoJogadoEmEdicao, jogosDisponiveis]);
+	}, [
+		formState.jogoId,
+		formState.usuarioId,
+		jogoJogadoEmEdicao,
+		jogosDisponiveis,
+	]);
 
 	const handleChange = (
 		event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -129,7 +127,10 @@ export function FormularioJogoJogado({
 		}));
 	};
 
-	const handleChangeEstrela = (_event: SyntheticEvent, value: number | null) => {
+	const handleChangeEstrela = (
+		_event: SyntheticEvent,
+		value: number | null,
+	) => {
 		setFormState((currentState) => ({
 			...currentState,
 			estrela: value ?? 0,
@@ -154,7 +155,9 @@ export function FormularioJogoJogado({
 	};
 
 	const formularioDesabilitado =
-		jogos.length === 0 || usuarios.length === 0 || jogosDisponiveis.length === 0;
+		jogos.length === 0 ||
+		usuarios.length === 0 ||
+		jogosDisponiveis.length === 0;
 
 	return (
 		<Paper className={commonStyles.paperSection}>

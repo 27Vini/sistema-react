@@ -13,7 +13,7 @@ import {
 	Typography,
 } from "@mui/material";
 import commonStyles from "../../../styles/MuiCommon.module.css";
-import type { Distribuidora } from "../types/Distribuidora";
+import type { Distribuidora } from "../../../types/Distribuidora";
 import { CampoPesquisa } from "../../../components/CampoPesquisa";
 
 interface ListaDistribuidorasProps {

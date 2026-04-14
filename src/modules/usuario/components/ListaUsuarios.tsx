@@ -13,7 +13,7 @@ import {
 	Typography,
 } from "@mui/material";
 import commonStyles from "../../../styles/MuiCommon.module.css";
-import type { Usuario } from "../types/Usuario";
+import type { Usuario } from "../../../types/Usuario";
 import { CampoPesquisa } from "../../../components/CampoPesquisa";
 
 interface ListaUsuariosProps {

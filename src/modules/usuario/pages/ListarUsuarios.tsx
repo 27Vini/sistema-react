@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ListaUsuarios } from "../components/ListaUsuarios";
-import type { Usuario } from "../types/Usuario";
+import type { Usuario } from "../../../types/Usuario";
 
 interface ListarUsuariosProps {
 	usuarios: Usuario[];

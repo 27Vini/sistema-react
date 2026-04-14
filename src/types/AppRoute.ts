@@ -1,8 +1,8 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 export interface AppRoute {
-  key: string;
-  label: string;
-  description: string;
-  content: ReactNode;
+	key: string;
+	label: string;
+	description: string;
+	content: ReactNode;
 }

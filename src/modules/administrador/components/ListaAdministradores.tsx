@@ -14,7 +14,7 @@ import {
 	Typography,
 } from "@mui/material";
 import commonStyles from "../../../styles/MuiCommon.module.css";
-import type { Administrador } from "../types/Administrador";
+import type { Administrador } from "../../../types/Administrador";
 import { CampoPesquisa } from "../../../components/CampoPesquisa";
 
 interface ListaAdministradoresProps {

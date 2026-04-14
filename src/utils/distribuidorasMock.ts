@@ -1,4 +1,4 @@
-import { Distribuidora } from "../modules/distribuidora/types/Distribuidora";
+import { Distribuidora } from "../types/Distribuidora";
 
 export const distribuidorasMock: Distribuidora[] = [
 	{

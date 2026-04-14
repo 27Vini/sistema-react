@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
-import { Jogo } from "../../jogo/types/Jogo";
-import { Usuario } from "../../usuario/types/Usuario";
+import { Jogo } from "../../../types/Jogo";
+import { Usuario } from "../../../types/Usuario";
 import { JogoJogado } from "../types/JogosJogados";
 import { CampoPesquisa } from "../../../components/CampoPesquisa";
 import {

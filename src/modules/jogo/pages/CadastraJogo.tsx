@@ -1,6 +1,6 @@
-import type { Distribuidora } from "../../distribuidora/types/Distribuidora";
+import type { Distribuidora } from "../../../types/Distribuidora";
 import { FormularioJogo } from "../components/FormularioJogo";
-import type { NovoJogo, Jogo } from "../types/Jogo";
+import type { NovoJogo, Jogo } from "../../../types/Jogo";
 
 interface CadastraJogoProps {
 	distribuidoras: Distribuidora[];

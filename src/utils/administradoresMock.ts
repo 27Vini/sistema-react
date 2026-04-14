@@ -1,4 +1,4 @@
-import { Administrador } from "../modules/administrador/types/Administrador";
+import { Administrador } from "../types/Administrador";
 
 export const administradoresMock: Administrador[] = [
 	{

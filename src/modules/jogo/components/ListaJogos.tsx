@@ -13,8 +13,8 @@ import {
 	Typography,
 } from "@mui/material";
 import commonStyles from "../../../styles/MuiCommon.module.css";
-import type { Distribuidora } from "../../distribuidora/types/Distribuidora";
-import type { Jogo } from "../types/Jogo";
+import type { Distribuidora } from "../../../types/Distribuidora";
+import type { Jogo } from "../../../types/Jogo";
 import { CampoPesquisa } from "../../../components/CampoPesquisa";
 
 interface ListaJogosProps {

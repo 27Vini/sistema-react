@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { Jogo } from "../jogo/types/Jogo";
-import { Usuario } from "../usuario/types/Usuario";
+import { Jogo } from "../../types/Jogo";
+import { Usuario } from "../../types/Usuario";
 import { JogoJogado, JogoJogadoNovo } from "./types/JogosJogados";
 import { CadastraJogoJogado } from "./pages/CadastraJogoJogado";
 import { ListarJogosJogados } from "./pages/ListarJogosJogados";

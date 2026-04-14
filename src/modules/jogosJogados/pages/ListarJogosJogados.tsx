@@ -1,6 +1,6 @@
 import { ListaJogosJogados } from "../components/ListaJogosJogados";
-import { Jogo } from "../../jogo/types/Jogo";
-import { Usuario } from "../../usuario/types/Usuario";
+import { Jogo } from "../../../types/Jogo";
+import { Usuario } from "../../../types/Usuario";
 import { JogoJogado } from "../types/JogosJogados";
 
 interface ListarJogosJogadosProps {
