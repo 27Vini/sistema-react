@@ -236,11 +236,11 @@ export function AppRoutes() {
 	};
 
 	const cadastrarJogoJogado = (novoJogoJogado: JogoJogadoNovo) => {
-		if (jogoEmEdicao) {
+		if (jogoJogadoEmEdicao) {
 			setJogosJogados((currentJogosJogados) =>
 				currentJogosJogados.map((jogoJogado) =>
-					jogoJogado.id === jogoJogadoEmEdicao?.id
-						? { id: jogoJogado.id, ...novoJogoJogado }
+					jogoJogado.id === jogoJogadoEmEdicao.id
+						? { id: jogoJogadoEmEdicao.id, ...novoJogoJogado }
 						: jogoJogado,
 				),
 			);
@@ -266,7 +266,7 @@ export function AppRoutes() {
 			atuais.filter((jogoJogado) => jogoJogado.id !== id),
 		);
 		if (jogoJogadoEmEdicao?.id === id) {
-			setJogoEmEdicao(null);
+			setJogoJogadoEmEdicao(null);
 		}
 		abrirFeedback("Jogo jogado removido com sucesso.", "warning");
 	};

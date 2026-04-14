@@ -1,4 +1,4 @@
-import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react';
+import { useEffect, useState, type ChangeEvent, type SyntheticEvent } from 'react';
 import {
   Box,
   Button,
@@ -69,7 +69,7 @@ export function FormularioJogo({
     }));
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!formState.distribuidoraId) {

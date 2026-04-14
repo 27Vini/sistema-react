@@ -1,4 +1,4 @@
-import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react';
+import { useEffect, useState, type ChangeEvent, type SyntheticEvent } from 'react';
 import { Box, Button, Paper, Stack, TextField, Typography } from '@mui/material';
 import commonStyles from '../../../styles/MuiCommon.module.css';
 import type { NovoAdministrador, Administrador } from '../types/Administrador';
@@ -56,7 +56,7 @@ export function FormularioAdministrador({
     }));
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSubmit(formState);
     setFormState(initialState);

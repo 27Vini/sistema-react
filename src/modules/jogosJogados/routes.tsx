@@ -34,6 +34,7 @@ export default function RoutesJogoJogado({
 					<CadastraJogoJogado
 						jogoJogadoEmEdicao={jogoJogadoEmEdicao}
 						jogos={jogos}
+						jogosJogados={jogosJogados}
 						onCadastrarJogo={onCadastrarJogo}
 						onCancelarEdicao={onCancelarEdicaoJogo}
 						usuarios={usuarios}

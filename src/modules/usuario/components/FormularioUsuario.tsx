@@ -1,4 +1,4 @@
-import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react';
+import { useEffect, useState, type ChangeEvent, type SyntheticEvent } from 'react';
 import { Box, Button, Paper, Stack, TextField, Typography } from '@mui/material';
 import commonStyles from '../../../styles/MuiCommon.module.css';
 import type { NovoUsuario, Usuario } from '../types/Usuario';
@@ -50,7 +50,7 @@ export function FormularioUsuario({
     }));
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSubmit(formState);
     setFormState(initialState);
